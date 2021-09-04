@@ -1,0 +1,348 @@
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+
+  --Dar-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+
+  --Bai-Jamjuree-font: "Bai Jamjuree", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  font-family: var(--Bai-Jamjuree-font);
+}
+
+.logo {
+  width: 100%;
+  height: 300px;
+  background: url(images/bg-header-mobile.png) center center/cover no-repeat;
+}
+
+.logo img {
+  display: block;
+  margin: 100px auto 0px auto;
+}
+
+.headertext {
+  text-align: center;
+}
+
+.headertext h1 {
+  color: var(--Dar-Grayish-Blue);
+  padding: 0px 30px;
+}
+
+.headertext p {
+  padding: 20px 30px;
+  line-height: 25px;
+  color: var(--Grayish-Blue);
+}
+
+.headertext .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.samebtn {
+  border: none;
+  border-radius: 20px;
+  height: 50px;
+  width: clamp(200px, 100%, 500px);
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.headertext .btn .ios {
+  box-shadow: 0px 2px 6px var(--Strong-Cyan);
+  background-color: var(--Strong-Cyan);
+}
+
+.headertext .btn .mac {
+  box-shadow: 0px 2px 6px var(--Light-Blue);
+  background-color: var(--Light-Blue);
+  margin: 25px 0;
+}
+
+.heroone {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.heroone .herotext h1 {
+  color: var(--Dar-Grayish-Blue);
+  padding: 20px 50px;
+}
+
+.heroone p {
+  padding: 0 40px;
+  line-height: 25px;
+  color: var(--Grayish-Blue);
+  margin-bottom: 60px;
+}
+
+.computerimg .heroimg img {
+  width: 80%;
+}
+
+.computertext {
+  margin-top: 50px;
+}
+
+.computertext h2 {
+  margin: 10px 0;
+  color: var(--Dar-Grayish-Blue);
+}
+
+.herotwo {
+  margin-top: 160px;
+}
+
+.herotwo h1 {
+  padding: 20px 40px;
+  color: var(--Dar-Grayish-Blue);
+}
+
+.herotwo .herotwoimg img {
+  width: 90%;
+}
+
+.herothree {
+  margin-top: 80px;
+}
+
+.herothree h1 {
+  padding: 10px 40px;
+  color: var(--Dar-Grayish-Blue);
+}
+
+.herothreeicons img {
+  margin: 30px 0;
+}
+
+.herothreeicons h2 {
+  color: var(--Dar-Grayish-Blue);
+  margin: 20px 0;
+}
+
+.herofour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.herofour img {
+  margin: 30px;
+}
+
+.herofive {
+  margin-top: 100px;
+  margin-bottom: 130px;
+}
+
+.herofive h1 {
+  padding: 20px 40px;
+  color: var(--Dar-Grayish-Blue);
+}
+
+.herofive .herofivebtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.herofive .herofivebtn .ios {
+  box-shadow: 0px 2px 6px var(--Strong-Cyan);
+  background-color: var(--Strong-Cyan);
+}
+
+.herofive .herofivebtn .mac {
+  box-shadow: 0px 2px 6px var(--Light-Blue);
+  background-color: var(--Light-Blue);
+  margin: 25px 0;
+}
+
+footer {
+  background-color: rgba(182, 170, 163, 0.253);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 0;
+  background-color: rgba(182, 170, 163, 0.253);
+}
+
+.footer .footerlogo img {
+  width: 50px;
+}
+
+.footer .footerfaq ul {
+  margin: 30px 0;
+}
+
+.footer .footerfaq li {
+  list-style: none;
+  margin-top: 25px;
+}
+
+.footer .footerfaq a {
+  color: var(--Dar-Grayish-Blue);
+  text-decoration: none;
+}
+
+.footer .footericons {
+  display: flex;
+}
+
+.footer .footericons img {
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1440px) {
+  .logo {
+    background-image: url(images/bg-header-desktop.png);
+  }
+
+  .headertext p {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .headertext .btn {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .samebtn {
+    width: 30%;
+    margin: 0 20px;
+    border-radius: 30px;
+  }
+
+  .heroone .herotext p {
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  .computerimg {
+    display: flex;
+    position: relative;
+    margin-top: 60px;
+    /* border: solid 3px red; */
+  }
+
+  .computerimg .heroimg {
+    display: flex;
+    justify-content: start;
+    transform: translateX(-50px);
+    width: 60%;
+    /* border: solid 3px red; */
+  }
+
+  .computerimg .computertext {
+    text-align: left;
+    margin-top: 80px;
+    padding: 0;
+  }
+
+  .computerimg .computertext p {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 60%;
+    padding: 0;
+  }
+
+  .herotwotext p {
+    width: 45%;
+    margin: 0 auto 60px auto;
+  }
+
+  .herotwo .herotwoimg img {
+    width: 50%;
+  }
+
+  .herothreeicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .herothreeicons .iocnst {
+    flex: 1;
+  }
+
+  .herofour {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .herofive p {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .herofive .herofivebtn {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .herofive .herofivebtn .ios {
+    width: 17%;
+  }
+
+  .herofive .herofivebtn .mac {
+    width: 17%;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    height: 140px;
+  }
+
+  .footerfaq {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footerfaq ul {
+    margin: 0px 50px;
+  }
+
+  .footerfaq li {
+    margin: 0 40px;
+  }
+}
